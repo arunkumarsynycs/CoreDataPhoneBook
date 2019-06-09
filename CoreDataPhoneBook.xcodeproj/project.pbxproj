@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435478DA20E6042D00DF1FF3 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435478D920E6042D00DF1FF3 /* CustomTableViewCell.swift */; };
+		435478DC20E6044D00DF1FF3 /* PhotoBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435478DB20E6044D00DF1FF3 /* PhotoBaseTableViewController.swift */; };
+		435478DF20E6057400DF1FF3 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435478DD20E6057400DF1FF3 /* Entity+CoreDataClass.swift */; };
+		435478E020E6057400DF1FF3 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435478DE20E6057400DF1FF3 /* Entity+CoreDataProperties.swift */; };
+		435478E320E605C900DF1FF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435478E220E605C900DF1FF3 /* CoreData.framework */; };
+		435478E520E62D1600DF1FF3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435478E420E62D1600DF1FF3 /* AddViewController.swift */; };
 		4364036720DB667E0093241C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4364036620DB667E0093241C /* AppDelegate.swift */; };
-		4364036920DB667E0093241C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4364036820DB667E0093241C /* ViewController.swift */; };
 		4364036C20DB667F0093241C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4364036A20DB667F0093241C /* Main.storyboard */; };
 		4364036F20DB667F0093241C /* CoreDataPhoneBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4364036D20DB667F0093241C /* CoreDataPhoneBook.xcdatamodeld */; };
 		4364037120DB667F0093241C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4364037020DB667F0093241C /* Assets.xcassets */; };
@@ -16,9 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		435478D920E6042D00DF1FF3 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		435478DB20E6044D00DF1FF3 /* PhotoBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBaseTableViewController.swift; sourceTree = "<group>"; };
+		435478DD20E6057400DF1FF3 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		435478DE20E6057400DF1FF3 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		435478E220E605C900DF1FF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		435478E420E62D1600DF1FF3 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		4364036320DB667E0093241C /* CoreDataPhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4364036620DB667E0093241C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4364036820DB667E0093241C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4364036B20DB667F0093241C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4364036E20DB667F0093241C /* CoreDataPhoneBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPhoneBook.xcdatamodel; sourceTree = "<group>"; };
 		4364037020DB667F0093241C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435478E320E605C900DF1FF3 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		435478E120E605C900DF1FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435478E220E605C900DF1FF3 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4364035A20DB667E0093241C = {
 			isa = PBXGroup;
 			children = (
+				435478DD20E6057400DF1FF3 /* Entity+CoreDataClass.swift */,
+				435478DE20E6057400DF1FF3 /* Entity+CoreDataProperties.swift */,
 				4364036520DB667E0093241C /* CoreDataPhoneBook */,
 				4364036420DB667E0093241C /* Products */,
+				435478E120E605C900DF1FF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				4364036620DB667E0093241C /* AppDelegate.swift */,
-				4364036820DB667E0093241C /* ViewController.swift */,
 				4364036A20DB667F0093241C /* Main.storyboard */,
+				435478DB20E6044D00DF1FF3 /* PhotoBaseTableViewController.swift */,
+				435478D920E6042D00DF1FF3 /* CustomTableViewCell.swift */,
+				435478E420E62D1600DF1FF3 /* AddViewController.swift */,
 				4364037020DB667F0093241C /* Assets.xcassets */,
 				4364037220DB667F0093241C /* LaunchScreen.storyboard */,
 				4364037520DB667F0093241C /* Info.plist */,
@@ -139,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4364036920DB667E0093241C /* ViewController.swift in Sources */,
+				435478E020E6057400DF1FF3 /* Entity+CoreDataProperties.swift in Sources */,
+				435478DA20E6042D00DF1FF3 /* CustomTableViewCell.swift in Sources */,
+				435478E520E62D1600DF1FF3 /* AddViewController.swift in Sources */,
+				435478DC20E6044D00DF1FF3 /* PhotoBaseTableViewController.swift in Sources */,
 				4364036720DB667E0093241C /* AppDelegate.swift in Sources */,
+				435478DF20E6057400DF1FF3 /* Entity+CoreDataClass.swift in Sources */,
 				4364036F20DB667F0093241C /* CoreDataPhoneBook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
